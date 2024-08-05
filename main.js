@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         SilentSpoofer for EasyAgent
+// @name         SilentSpoofer for UserAgents
 // @namespace    https://staybrowser.com/
-// @version      1.2
+// @version      3
 // @description  UserAgent spoofer working for EasyAgent
 // @author       @smokethatzip
-// @match        https://easyagent.glitch.me
+// @match        *
 // @grant        none
 // ==/UserScript==
 (function() {
