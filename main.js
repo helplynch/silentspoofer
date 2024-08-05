@@ -8,7 +8,14 @@
 // @grant        none
 // ==/UserScript==
 (function() {
-    var newUserAgent = prompt("SilentSpoofer v1.2\nEnter a userAgent:")
+    var newUserAgent = localStorage.getItem("ss-auto")
+    if (newUserAgent) {
+        console.log("Auto spoofed")
+    } else {
+        var x = prompt("SilentSpoofer v1.2\nEnter a userAgent:")
+        localStorage.setItem("ss-auto", x)
+        window.location.reload()
+    }
     Object.defineProperty(navigator, 'userAgent', {
         get: function() {
             return newUserAgent;
